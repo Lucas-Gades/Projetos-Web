@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação do normalize css para arrumar bugs -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <!-- CSS - Bootstrap 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Icone da aba da pagina-->
+    <link rel="shortcut icon" href="resources/img/logosuper-aba.png">
+    <!--Importação da nossa folha de estilo-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Receitas</title>
+</head>
+
+<body>
+    <header class="header-receitas">
+        <nav class="menu-index">
+            <div class="logo item">
+                <img src="resources/img/logosuper.png" alt="Logo da empresa">
+            </div>
+            <ul class="menu item">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="receitas.html"class="ative">Receitas</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="galeria-unidades.html">Galeria</a></li>
+                <li><a href="#">Lojas</a></li>
+                <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+            </ul>
+            <div class="conjunt-cart-login item">
+                <div class="cart-nav">
+                    <a href="#">
+                        <div class="amount-nav">0</div>
+                        <ion-icon class="cart-nav-icon" name="cart"></ion-icon>
+                        <span>Carrinho</span>
+                    </a>
+                </div>
+                <div class="login-nav">
+                    <div class=" nav-item dropdown">
+                        <a class="nav-link d" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ion-icon class="login-person-nav-icon" name="person"></ion-icon>
+                            <span>Olá, Visitante</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-item-login" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item dropdown-item-cadastrar" href="#">Cadastrar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-btn item">
+                <ion-icon id="icon-hamburger" name="menu-outline" onmousedown="menuShow()"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <!-- TÍTULO -->
+    <main class="main-receitas">
+        <div class="titulo-apresentacao-receitas">
+            <h1 class="titulo-receitas">Receitas</h1>
+        </div>
+        <!-- TÍTULO -->
+
+        <!-- MINI-MENU -->
+        <form class="row-receitas" action="#">
+            <div class="busca-receitas">
+                <label for="campo-busca-receitas">Descrição das Receitas:</label>
+                <input type="text" id="campo-busca-receitas" name="busca" placeholder="Nome da Receita">
+            </div>
+            <div class="menu-receitas">
+                <label for="menu-selecao">Classificação:</label>
+                <select id="menu-selecao" name="menu">
+                    <optgroup label="Categorias">
+                        <option value="opcao1">Salgados</option>
+                        <option value="opcao2">Doces</option>
+                        <option value="opcao3">Bebidas</option>
+                        <option value="opcao4">Matinais</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="botao-busca-receitas">
+                <input type="submit" value="Buscar">
+            </div>
+        </form>
+        <!-- MINI-MENU -->
+
+        <!-- RECEITAS -->
+        <section class="todas-receitas">
+            <article class="individuais-receitas">
+                <figure class="figure-receitas">
+                    <img class="img-receitas" src="resources/img/rucula_pesto.jpg" alt="Receita: Baby Rúcula com Pesto">
+                </figure>
+                <h2 class="titulo-receitas">Mix de tomates com baby rúcula e pesto</h2>
+                <p class="modo-preparo-receitas"> <span class="bold-receitas">Modo de Preparo: </span> Corte as
+                    batatas ao meio. Ferva as batatas até que fiquem al
+                    dente. Misture o creme de leite de caixinha, o creme de leite
+                    fresco,...
+                </p>
+                <div class="botao-and-star-receitas">
+                    <div class="botao-modal-receitas">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver
+                            Receita
+                        </a>
+                    </div>
+                    <div class="star-receitas">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="icons-receitas">
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-clock"> 30 Min</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-users"> 5 Pessoas</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-star"> Fácil</i>
+                    </div>
+                </div>
+            </article>
+            <article class="individuais-receitas">
+                <figure class="figure-receitas">
+                    <img class="img-receitas" src="resources/img/file-salteado.jpg" alt="Receita: Filé Salteado">
+                </figure>
+                <h2 class="titulo-receitas">Filé salteado</h2>
+                <p class="modo-preparo-receitas"><span>Modo de Preparo:</span> Corte o filé em
+                    fatias finas. Aqueça uma frigideira em fogo médio-alto e adicione um pouco de óleo vegetal. Adicione
+                    as fatias de filé à frigideira e tempere com sal e pimenta a gosto...,</p>
+                <div class="botao-and-star-receitas">
+                    <div class="botao-modal-receitas">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ver
+                            Receita
+                        </a>
+                    </div>
+                    <div class="star-receitas">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="icons-receitas">
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-clock"> 30 Min</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-users"> 5 Pessoas</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-star"> Fácil</i>
+                    </div>
+                </div>
+            </article>
+            <article class="individuais-receitas">
+                <figure class="figure-receitas">
+                    <img class="img-receitas" src="resources/img/gratinado-bacalhau-mandioquinha.jpg"
+                        alt="Receita: Bacalhau Gratinado com Mandioquinha">
+                </figure>
+                <h2 class="titulo-receitas">Bacalhau Gratinado com Mandioquinha</h2>
+                <p class="modo-preparo-receitas"><span class="bold-receitas">Modo de Preparo:</span> Pré-aqueça o
+                    forno a 180°C. Em uma panela, cozinhe o bacalhau em água fervente por aproximadamente 10 minutos...,
+
+                </p>
+                <div class="botao-and-star-receitas">
+                    <div class="botao-modal-receitas">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Ver
+                            Receita
+                        </a>
+                    </div>
+                    <div class="star-receitas">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="icons-receitas">
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-clock"> 30 Min</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-users"> 5 Pessoas</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-star"> Fácil</i>
+                    </div>
+                </div>
+            </article>
+            <article class="individuais-receitas">
+                <figure class="figure-receitas">
+                    <img class="img-receitas" src="resources/img/mojito.jpg" alt="Receita: Mojito">
+                </figure>
+                <h2 class="titulo-receitas">Mojito</h2>
+                <p class="modo-preparo-receitas"> <span>Modo de Preparo: </span> Em um copo
+                    alto, prepare o Mojito adicionando algumas folhas de hortelã fresca, açúcar e suco de limão.
+                    Utilizando um socador...,
+                </p>
+                <div class="botao-and-star-receitas">
+                    <div class="botao-modal-receitas">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">Ver
+                            Receita
+                        </a>
+                    </div>
+                    <div class="star-receitas">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="icons-receitas">
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-clock"> 30 Min</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-users"> 5 Pessoas</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-star"> Fácil</i>
+                    </div>
+                </div>
+            </article>
+            <article class="individuais-receitas">
+                <figure class="figure-receitas">
+                    <img class="img-receitas" src="resources/img/penne-com-molho-de-alho-por.jpg"
+                        alt="Receita: Penne com moho de alho poró">
+                </figure>
+                <h2 class="titulo-receitas">Penne com Molho de Alho Poró</h2>
+                <p class="modo-preparo-receitas"> <span>Modo de Preparo: </span> Em uma panela, aqueça um pouco de
+                    azeite em fogo médio. Adicione o alho-poró fatiado e refogue até ficar macio e ...,
+                </p>
+                <div class="botao-and-star-receitas">
+                    <div class="botao-modal-receitas">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">Ver
+                            Receita
+                        </a>
+                    </div>
+                    <div class="star-receitas">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="icons-receitas">
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-clock"> 30 Min</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-users"> 5 Pessoas</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-star"> Fácil</i>
+                    </div>
+                </div>
+            </article>
+            <article class="individuais-receitas">
+                <figure class="figure-receitas">
+                    <img class="img-receitas" src="resources/img/terrine-chocolate-castanhas.jpg"
+                        alt="Receita: Terrine de chocolate com Castanhas">
+                </figure>
+                <h2 class="titulo-receitas">Terrine de Chocolate com Castanhas</h2>
+                <p class="modo-preparo-receitas"> <span class="bold-receitas">Modo de Preparo: </span> Derreta o
+                    chocolate em banho-maria ou no micro-ondas, mexendo...,
+                </p>
+                <div class="botao-and-star-receitas">
+                    <div class="botao-modal-receitas">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">Ver
+                            Receita
+                        </a>
+                    </div>
+                    <div class="star-receitas">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="icons-receitas">
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-clock"> 30 Min</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-users"> 5 Pessoas</i>
+                    </div>
+                    <div class="font-awesome-icons-receitas"> <i class="fa-solid fa-star"> Fácil</i>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        <!-- RECEITAS -->
+
+        <!-- MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog receitas">
+                <div class="modal-content">
+                    <div class="modal-header receitas">
+                        <h5 class="modal-title receitas" id="exampleModalLabel">Mix de tomates com baby rúcula e pesto
+                        </h5>
+                        <button type="button" class="btn my-custom-button-receitas" data-bs-dismiss="modal"
+                            aria-label="Close">
+                            <i class="fa-sharp fa-solid fa-circle-xmark fa-2xl"></i>
+                        </button>
+
+
+                    </div>
+                    <!-- CONTEÚDO DO MODAL -->
+                    <article class="modal-body receitas">
+                        <div>
+                            <h2>Chefe João Joãzinho</h2>
+                            <div>
+                                <ul class="star_rating-receitas">
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <ul class="preparacao-receitas">
+                                    <li>
+                                        <i class="fas fa-users"></i>
+                                        4 Pessoas
+                                    </li>
+                                    <li>
+                                        <i class="far fa-clock"></i>
+                                        30 Minutos
+                                    </li>
+                                    <li>
+                                        <i class="far fa-star"></i>
+                                        Fácil
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ingredientes-receitas">
+                            <div class="ingredientes-img-receitas">
+                                <div class="titulo-ingredientes-e-lista">
+                                    <p class="fas fa-list-ul">Ingredientes</p>
+                                    <ul>
+                                        <li>Filé mignon: 400g</li>
+                                        <li>Mostarda Ancienne: 70g</li>
+                                        <li>Mostarda amarela hemmer: 100g</li>
+                                        <li>Creme de leite de caixinha: 200g</li>
+                                        <li>Creme de leite fresco: 100g</li>
+                                        <li>Mini batata: 300g</li>
+                                        <li>Azeite de oliva: 2 colheres de sopa</li>
+                                        <li>Manteiga: 1 colher de sopa</li>
+                                        <li>Alecrim: 2 ramos</li>
+                                        <li>Sal: a gosto</li>
+                                        <li>Pimenta do reino: a gosto</li>
+                                    </ul>
+                                </div>
+                                <div class="receita-modal-receitas">
+                                    <figure><img src="resources/img/rucula_pesto.jpg" alt=""></figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modo-preparo-receitas">
+                            <div class="ingredientes-img-receitas">
+                                <p class="fas fa-list-ul">Modo de Preparo</p>
+                                <ul>
+                                    <li>Pré-aqueça o forno a 200°C.</li>
+                                    <li>Em uma assadeira, coloque as mini batatas e regue-as com 1 colher de sopa de
+                                        azeite de
+                                        oliva. Tempere com sal, pimenta do reino e os ramos de alecrim. Misture bem para
+                                        que as
+                                        batatas fiquem cobertas pelos temperos. Leve ao forno por aproximadamente 30
+                                        minutos, ou até
+                                        que fiquem douradas e macias.</li>
+                                    <li>Enquanto as batatas assam, prepare o filé mignon. Tempere a carne com sal e
+                                        pimenta do reino
+                                        a gosto.</li>
+                                    <li>Em uma frigideira grande, aqueça 1 colher de sopa de azeite de oliva e a
+                                        manteiga em fogo
+                                        médio-alto. Adicione o filé mignon e sele todos os lados da carne, deixando-a
+                                        dourada por
+                                        fora. Isso ajudará a manter a suculência interna da carne. O tempo de selagem
+                                        depende do ponto
+                                        de cocção desejado.</li>
+                                    <li>Retire o filé mignon da frigideira e reserve em um prato. Mantenha a frigideira
+                                        em fogo
+                                        médio-baixo.</li>
+                                    <li>Na mesma frigideira, adicione as mostardas (Ancienne e amarela), o creme de
+                                        leite de
+                                        caixinha e o creme de leite fresco. Mexa bem para incorporar os ingredientes e
+                                        formar um molho
+                                        cremoso. Cozinhe por alguns minutos até que o molho esteja aquecido e levemente
+                                        espesso.
+                                        Tempere com sal e pimenta do reino, se necessário.</li>
+                                    <li>Retire as batatas do forno quando estiverem prontas e reserve.</li>
+                                    <li>Fatie o filé mignon em medalhões e sirva com as batatas assadas. Regue a carne
+                                        com o molho
+                                        de mostarda e decore com alguns ramos de alecrim.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL -->
+    </main>
+    <footer class="start-footer">
+        <div class="coluna-footer">
+            <div class="elementos-footer">
+                <h3 class="h3-footer">Intitucional</h3>
+                <ul>
+                    <li><a href="">Quem Somos</a></li>
+                    <li><a href="">Qualidade SuperSenac</a></li>
+                    <li><a href="">Responsabilidade Social</a></li>
+                    <li><a href="">Fornecedores</a></li>
+                    <li><a href="">Novidades</a></li>
+                </ul>
+            </div>
+            <div class="elementos-footer">
+                <h3 class="h3-footer">Dúvidas Frequentes</h3>
+                <ul>
+                    <li><a href="">Central de Atendimento</a></li>
+                    <li><a href="">Políticas de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="elementos-footer">
+                <h3 class="h3-footer">Ofertas</h3>
+                <ul>
+                    <li><a href="#">Ofertas no WhatsApp</a></li>
+                    <li><a href="#">Ofertas no Telegram</a></li>
+                </ul>
+            </div>
+            <div class="elementos-footer">
+                <div>
+                    <h3 class="h3-footer">SAC</h3>
+                    <ul>
+                        <li><a href="#">Serviço de atendimento ao Cliente</a></li>
+                    </ul>
+                </div>
+                <div class="elementos-footer redes-sociais-footer">
+                    <h3 class="h3-footer">Nossas Redes Sociais</h3>
+                    <div class="logos-redes-sociais-footer">
+                        <ul class="list-redes-sociais-footter">
+                            <li class="li-rede-social-footer"><i class="fa-brands fa-facebook fa-2xl"></i></li>
+                            <li class="li-rede-social-footer"><i class="fa-brands fa-twitter fa-2xl"></i></li>
+                            <li class="li-rede-social-footer"><i class="fa-brands fa-instagram fa-2xl"></i></li>
+                            <li class="li-rede-social-footer"><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-footer">
+            <div class="elementos-footer">
+                <div class="coluna-pagamentos-footer">
+                    <h3 class="h3-footer">Formas de pagamento</h3>
+                    <ul class="icons-cards">
+                        <li><i class="fa-brands fa-cc-mastercard fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-cc-visa fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-cc-stripe fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-cc-paypal fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-cc-diners-club fa-2xl"></i></li>
+                        <li><i class="fa-brands fa-cc-amex fa-2xl"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end-footer">
+            <p class="direitos-footer">
+                © 2023 Grupo SuperSenac. Todos os Direitos Reservados.
+            </p>
+            <p class="aviso-footer">
+                Aviso Importante: Os preços e produtos disponíveis neste site são
+                exclusivos para compras online e estão sujeitos a alterações sem aviso
+                prévio. As imagens apresentadas têm caráter ilustrativo e podem não
+                corresponder exatamente ao produto real. A disponibilidade de estoque
+                dos produtos será verificada no momento em que seu pedido estiver em
+                processo de separação. No entanto, não podemos garantir a
+                disponibilidade total dos itens. Todos os pedidos estão sujeitos à
+                confirmação dos dados cadastrais e pagamento. Realizaremos uma análise
+                cuidadosa para garantir a precisão das informações fornecidas e a
+                segurança da transação. É importante ressaltar que é expressamente
+                proibida a venda e entrega de bebidas alcoólicas a menores de 18 anos,
+                conforme previsto no Artigo 81, Inciso II do Estatuto da Criança e do
+                Adolescente. Pedimos a todos que consumam bebidas alcoólicas de forma
+                responsável e em conformidade com a legislação vigente. Agradecemos a
+                compreensão e estamos à disposição para qualquer esclarecimento
+                adicional.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS - Bootstrap 5.3.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <!-- importação da biblioteca de ícones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Importação da biblioteca do JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Importação da nossa biblioteca javascript-->
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>

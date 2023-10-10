@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importação do normalize css para arrumar bugs -->
+  <link rel="stylesheet" href="vendors/css/normalize.css">
+  <!-- CSS - Bootstrap 5.3.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!--Icone da aba da pagina-->
+  <link rel="shortcut icon" href="resources/img/logosuper-aba.png">
+  <!--Importação da nossa folha de estilo-->
+  <link rel="stylesheet" href="resources/css/style.css">
+  <title>SuperSenac</title>
+</head>
+
+<body>
+  <header class="header-galeria mb-0">
+    <header class="header-receitas">
+      <nav class="menu-index">
+        <div class="logo item">
+          <img src="resources/img/logosuper.png" alt="Logo da empresa">
+        </div>
+        <ul class="menu item">
+          <li><a href="index.html" class="ative">Inicio</a></li>
+          <li><a href="receitas.html">Receitas</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="galeria-unidades.html">Galeria</a></li>
+          <li><a href="#">Lojas</a></li>
+          <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+        </ul>
+        <div class="conjunt-cart-login item">
+          <div class="cart-nav">
+            <a href="#">
+              <div class="amount-nav">0</div>
+              <ion-icon class="cart-nav-icon" name="cart"></ion-icon>
+              <span>Carrinho</span>
+            </a>
+          </div>
+          <div class="login-nav">
+            <div class=" nav-item dropdown">
+              <a class="nav-link d" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <ion-icon class="login-person-nav-icon" name="person"></ion-icon>
+                <span>Olá, Visitante</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item dropdown-item-login" href="login.html">Login</a></li>
+                <li><a class="dropdown-item dropdown-item-cadastrar" href="#">Cadastrar</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu-btn item">
+          <ion-icon id="icon-hamburger" name="menu-outline" onmousedown="menuShow()"></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <main class="main-unidades">
+      <h1 class="titulo-unidades">Confira as Nossas Unidades</h1>
+      <div class="individual-unidades">
+        <img class="img-unidades" src="resources/img/supersenac_aclimacao.png" alt="Unidade Aclimação">
+        <h3 class="nome-unidade">Aclimação</h3>
+      </div>
+      <div class="individual-unidades">
+        <img class="img-unidades" src="resources/img/supersenac_aguas_de_sao_pedro.png"
+          alt="Unidade Águas de Sçao Pedro">
+        <h3 class="nome-unidade">Águas de São Pedro</h3>
+      </div>
+      <div class="individual-unidades">
+        <img class="img-unidades" src="resources/img/supersenac_americana.png" alt="Unidade Americana">
+        <h3 class="nome-unidade">Americana</h3>
+      </div>
+      <div class="individual-unidades">
+        <img class="img-unidades" src="resources/img/supersenac_aracatuba.png" alt="Unidade Araçatuba">
+        <h3 class="nome-unidade">Araçatuba</h3>
+      </div>
+      <div class="individual-unidades">
+        <img class="img-unidades" src="resources/img/supersenac_araquara.png" alt="Unidade Araraquara">
+        <h3 class="nome-unidade">Araraquara</h3>
+      </div>
+      <div class="individual-unidades">
+        <img class="img-unidades" src="resources/img/supersenac_barretos.png" alt="Unidade Barretos">
+        <h3 class="nome-unidade">Barretos</h3>
+      </div>
+    </main>
+    <!-- #######################   FOOTER   ########################## -->
+    <footer class="start-footer">
+      <div class="coluna-footer">
+        <div class="elementos-footer">
+          <h3 class="h3-footer">Intitucional</h3>
+          <ul>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="">Qualidade SuperSenac</a></li>
+            <li><a href="">Responsabilidade Social</a></li>
+            <li><a href="">Fornecedores</a></li>
+            <li><a href="">Novidades</a></li>
+          </ul>
+        </div>
+        <div class="elementos-footer">
+          <h3 class="h3-footer">Dúvidas Frequentes</h3>
+          <ul>
+            <li><a href="">Central de Atendimento</a></li>
+            <li><a href="">Políticas de Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="elementos-footer">
+          <h3 class="h3-footer">Ofertas</h3>
+          <ul>
+            <li><a href="#">Ofertas no WhatsApp</a></li>
+            <li><a href="#">Ofertas no Telegram</a></li>
+          </ul>
+        </div>
+        <div class="elementos-footer">
+          <div>
+            <h3 class="h3-footer">SAC</h3>
+            <ul>
+              <li><a href="#">Serviço de atendimento ao Cliente</a></li>
+            </ul>
+          </div>
+          <div class="elementos-footer redes-sociais-footer">
+            <h3 class="h3-footer">Nossas Redes Sociais</h3>
+            <div class="logos-redes-sociais-footer">
+              <ul class="list-redes-sociais-footter">
+                <li class="li-rede-social-footer"><i class="fa-brands fa-facebook fa-2xl"></i></li>
+                <li class="li-rede-social-footer"><i class="fa-brands fa-twitter fa-2xl"></i></li>
+                <li class="li-rede-social-footer"><i class="fa-brands fa-instagram fa-2xl"></i></li>
+                <li class="li-rede-social-footer"><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center-footer">
+        <div class="elementos-footer">
+          <div class="coluna-pagamentos-footer">
+            <h3 class="h3-footer">Formas de pagamento</h3>
+            <ul class="icons-cards">
+              <li><i class="fa-brands fa-cc-mastercard fa-2xl"></i></li>
+              <li><i class="fa-brands fa-cc-visa fa-2xl"></i></li>
+              <li><i class="fa-brands fa-cc-stripe fa-2xl"></i></li>
+              <li><i class="fa-brands fa-cc-paypal fa-2xl"></i></li>
+              <li><i class="fa-brands fa-cc-diners-club fa-2xl"></i></li>
+              <li><i class="fa-brands fa-cc-amex fa-2xl"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="end-footer">
+        <p class="direitos-footer">
+          © 2023 Grupo SuperSenac. Todos os Direitos Reservados.
+        </p>
+        <p class="aviso-footer">
+          Aviso Importante: Os preços e produtos disponíveis neste site são
+          exclusivos para compras online e estão sujeitos a alterações sem aviso
+          prévio. As imagens apresentadas têm caráter ilustrativo e podem não
+          corresponder exatamente ao produto real. A disponibilidade de estoque
+          dos produtos será verificada no momento em que seu pedido estiver em
+          processo de separação. No entanto, não podemos garantir a
+          disponibilidade total dos itens. Todos os pedidos estão sujeitos à
+          confirmação dos dados cadastrais e pagamento. Realizaremos uma análise
+          cuidadosa para garantir a precisão das informações fornecidas e a
+          segurança da transação. É importante ressaltar que é expressamente
+          proibida a venda e entrega de bebidas alcoólicas a menores de 18 anos,
+          conforme previsto no Artigo 81, Inciso II do Estatuto da Criança e do
+          Adolescente. Pedimos a todos que consumam bebidas alcoólicas de forma
+          responsável e em conformidade com a legislação vigente. Agradecemos a
+          compreensão e estamos à disposição para qualquer esclarecimento
+          adicional.
+        </p>
+      </div>
+    </footer>
+    <!-- JS - Bootstrap 5.3.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <!-- importação da biblioteca de ícones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Importação da biblioteca do JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Importação da nossa biblioteca javascript-->
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>
