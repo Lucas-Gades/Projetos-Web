@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    width: 99.8%;
+
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    color: white;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../img/balanca-IMC.jpg');
+    background-color: rgba(15, 61, 91, 0.77);
+    background-position: left;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+      
+}
+
+.titulo{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    border: 2px solid;
+    background-color: rgb(219, 232, 228);
+}
+
+
+/*ESTILIZAR O FORM*/
+form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.div-img-gp{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.div-img-gp img{
+    width: 100%;
+    height: 50%;
+}
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input[type=text], input[type=number]{
+    width: 90%;
+    height: 2em;
+    border-radius: 0.5em;
+    border: 2px solid;
+    font-size: 1.5em;
+    text-align: center;
+}
+input[type=submit]{
+    width: 50%;
+    height: 2em;
+    border-radius: 0.5em;
+    border: 2px solid;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgba(15, 61, 91, 0.77);
+    color: black;
+    font-weight: bold;
+}
+input[type=submit]:hover{
+    background-color: rgba(15, 61, 91, 0.77);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+#resultado{
+    width: 100%;
+    height: 2em;
+    border-radius: 0.5em;
+    border: 2px solid;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgba(15, 61, 91, 0.77);
+    color: white;
+    font-weight: bold;
+}
+
+
+
