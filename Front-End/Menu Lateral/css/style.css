@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+*{
+    font-family: 'Prompt', sans-serif;
+}
+
+html{
+    height: 100%;
+    background-image: url("./img/cidade_noite_1920x1200.jpg");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+body.menu-aberto{
+    background-color: rgba(0, 0, 0, 0.535);
+}
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    transition: width 0.3s ease;
+    z-index: 999;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.menu-lateral.aberto{
+    opacity: 1;
+    width: 200px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cabecalho-menu.mostrar{
+    opacity: 1;
+}
+
+.cabecalho-menu h3{
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.lista-menu{
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+    
+}
+
+.lista-menu li{
+    margin-bottom: 10px;
+}
+
+.lista-menu li a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+.lista-menu li a span{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-lateral.aberto .lista-menu li a span.mostrar{
+    opacity: 1;
+}
+
+.lista-menu li a:hover{
+    background-color: #555;
+
+}
+
+.btn-menu{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+.btn-menu i.fa-times{
+    display: none;
+}
