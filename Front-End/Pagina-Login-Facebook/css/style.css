@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+ 
+}
+
+
+.form-login{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.form-login hr{
+    width: 100%;
+    border-color: rgba(245, 245, 245, 0.558);
+   
+}
+.form-login input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-login input:focus{
+    border-color: #1877f2;
+}
+
+.senha-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.senha-container input{
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.form-login a{
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.btn-entrar{
+    background-color: #1877f2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-entrar:hover{
+    background-color: #166fe5;
+}
+
+
+
+.esqueceu-senha{
+    color: #1877f2;
+}
+
+.btn-criar-nova-conta{
+    background-color: #42b72a;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 45%;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.criar-pagina{
+    margin-top: 15px;
+    width: 65%;
+    text-align: center;
+
+}
+
+.criar-pagina a{
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.titulo-facebook{
+    color: #1877f2;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.descricao{
+    color: #000000;
+    font-size: 30px;
+  
+}

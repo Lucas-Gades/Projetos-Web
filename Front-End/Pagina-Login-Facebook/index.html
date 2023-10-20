@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="titulo-facebook">facebook</h1>
+                    <p class="descricao">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                </div>
+                <div class="col">
+                    <form action="" method="get" class="form-login">
+                        <input type="email" name="email" id="email" placeholder="Email ou telefone" class="input">
+                        <div class="senha-container">
+                          <input type="password" name="senha" id="senha" placeholder="Senha" class="input">
+                          <i class="fas fa-eye" id="show-password"></i>
+                        </div>
+                        <input type="submit" value="Entrar" class="btn-entrar">
+                        <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
+                        <hr>
+                        <a href="#" class="btn-criar-nova-conta">Criar nova conta</a>
+                      </form>
+                    <p class="criar-pagina">
+                        <a href="#">Criar uma Página</a>
+                        para uma celebridade, banda ou empresa.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <script>
+            const passwordField = document.getElementById('senha');
+            const showPasswordIcon = document.getElementById('show-password');
+          
+            showPasswordIcon.addEventListener('click', () => {
+              if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                showPasswordIcon.classList.remove('fa-eye');
+                showPasswordIcon.classList.add('fa-eye-slash');
+              } else {
+                passwordField.type = 'password';
+                showPasswordIcon.classList.remove('fa-eye-slash');
+                showPasswordIcon.classList.add('fa-eye');
+              }
+            });
+          </script>
+    </body>
+</html>
